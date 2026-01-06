@@ -57,17 +57,30 @@ if __name__ == '__main__':
         # resample control signal to audio rate
         t_frames = (0.5 + np.arange(0, num_frames)) / num_frames
         t_samples = np.arange(0, num_samples) / num_samples
-        interpolator = interpolate.interp1d(t_frames, control_sig.detach().numpy().squeeze(),
+        interpolator = interpolate.interp1d(t_frames, control_sig.detach().numpy().squeeze().T,
                                             kind='cubic', fill_value='extrapolate',
                                             bounds_error=False, axis=-1)
         control_sig = interpolator(t_samples)
 
         # estimate f0 and periodically extend to input audio length
         T0 = 1 / estimate_f0(control_sig, fs=1, buff=0)
-        control_sig = periodic_roll(np.expand_dims(control_sig, 0), T0=T0, roll=0, length=x.shape[-1]).T
+        if control_sig.ndim == 0:
+            control_sig = np.expand_dims(control_sig, 0)
+        control_sig = periodic_roll(control_sig, T0=T0[0], roll=0, length=x.shape[-1])
+        if control_sig.ndim == 1:
+            control_sig = np.expand_dims(control_sig, -1)
+        else:
+            control_sig = control_sig.T
 
     # run inference
-    y, control_sig_td = model.forward_inference(x, control_sig)
-    out_filename = f'inference_out_{os.path.split(base_path)[-1]}.wav'
+    if x.shape[0] == 1 or x.ndim == 1:
+        y, control_sig_td = model.forward_inference(x, control_sig)
+    else:
+        y = np.zeros_like(x)
+        for channel in range(x.shape[0]):
+            y_channel, _ = model.forward_inference(x[channel, :], control_sig)
+            y[channel, :] = y_channel
+
+    out_filename = f'inference_{args.in_audio}_{os.path.split(base_path)[-1]}.wav'
     scipy.io.wavfile.write(out_filename, fs, y.T)
     print('Saved', out_filename)

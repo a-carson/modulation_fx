@@ -15,10 +15,10 @@
     },
     "pedal": {
         "in_shape": "tri",
-        "in_sig_cfg": "train_input_250807_104006.wav",
+        "in_sig_cfg": "input_250807_104006.wav",
         "pulse_frac": 2,
-        "in_filename": "04-sv-1_bypass-250807_1107.wav",
-        "out_filename": "13-sv-1_0.5_0.5_0_1-250807_1308.wav"
+        "in_filename": "sv1_bypass-250807_1107.wav",
+        "out_filename": "sv1_0.5_0.5_0_1-250807_1308.wav"
     },
     "wandb": true,
     "config": 30,
@@ -54,7 +54,7 @@
         "batch_size": 256,
         "seq_length_samples": 262144
     },
-    "dataset_path": "../../audio_datasets/modulation_fx_250807/",
+    "dataset_path": "modulation_dataset",
     "loss_weights": {
         "lsd": 0,
         "frame": 0,

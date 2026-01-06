@@ -135,14 +135,7 @@ class ModulationEffectTrainer(pl.LightningModule):
         return self.model.forward(x=batch['in_stft'], n=batch['frame_idx'], roll=roll)
 
     def forward_inference(self, x, delay):
-        if x.ndim == 1:
-            x = x.unsqueeze(0)
-        y = np.zeros_like(x)
-
-        for c in range(x.shape[0]):
-            out_channel, delay_samples = self.model.forward_inference(x[c, :], delay)
-            y[c, :] = out_channel
-        return y.squeeze(), delay_samples
+        return self.model.forward_inference(x, delay)
 
     def training_step(self, batch, batch_idx):
 

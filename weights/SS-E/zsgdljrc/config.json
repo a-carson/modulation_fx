@@ -16,10 +16,10 @@
     },
     "pedal": {
         "in_shape": "ap_chirp",
-        "in_sig_cfg": "train_input_250807_104006.wav",
+        "in_sig_cfg": "input_250807_104006.wav",
         "pulse_frac": 2,
-        "in_filename": "05-smallstone_bypass-250807_1107.wav",
-        "out_filename": "11-smallstone_0.5_1-250807_1242.wav"
+        "in_filename": "smallstone_bypass-250807_1107.wav",
+        "out_filename": "smallstone_0.5_1-250807_1242.wav"
     },
     "wandb": true,
     "config": 104,
@@ -56,7 +56,7 @@
         "batch_size": 128,
         "seq_length_samples": 262144
     },
-    "dataset_path": "../../audio_datasets/modulation_fx_250807/",
+    "dataset_path": "modulation_dataset",
     "loss_weights": {
         "lsd": 0,
         "frame": 0,

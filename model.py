@@ -51,15 +51,17 @@ class ModulationEffect(torch.nn.Module):
         :return:
         '''
 
-        delay_norm = self.get_control_signal(n, roll=roll)
-        phasor_frames = self.phasor(delay_norm)
+        control_sig = self.get_control_signal(n, roll=roll)
+        phasor_frames = self.phasor(control_sig)
 
         out = torch.zeros_like(x)
         for i, model in enumerate(self.models):
             out = out + model(x, phasor_frames[:, i, :])
 
-        delay_samples = self.n_fft / 2 * delay_norm
-        return out, delay_samples
+        if not self.phaser:
+            control_sig = self.n_fft / 2 * control_sig
+
+        return out, control_sig
 
     def get_control_signal(self, n, roll):
         c = self.emb(n) / 2 / torch.pi
