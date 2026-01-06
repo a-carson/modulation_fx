@@ -46,8 +46,21 @@ classes:
 <p style="font-size: 1.0em; text-align: center">
 Supplementary audio examples.</p>
 
+<div style="text-align: center; align-items: center">
+    <a href="https://github.com/a-carson/modulation_fx" 
+        class="btn btn--primary btn--small"
+        target="_blank" rel="noopener noreferrer">
+    </> Code
+    </a>
+    <a href="https://github.com/a-carson/modulation_fx" 
+        class="btn btn--primary btn--small"
+        target="_blank" rel="noopener noreferrer">
+    🗞️ Paper
+    </a>
+</div>
 
-[//]: # (##### Abstract)
+##### Abstract
+Modulation effects such as phasers, flangers and chorus effects are heavily used in conjunction with the electric guitar. Machine learning based emulation of analog modulation units has been investigated in recent years, but most methods have either been limited to one class of effect or suffer from a high computational cost or latency compared to canonical digital implementations. Here, we build on previous work and present a framework for modelling flanger, chorus and phaser effects based on differentiable digital signal processing. The model is trained in the time-frequency domain, but at inference operates in the time-domain, requiring zero latency. We investigate the challenges associated with gradient-based optimisation of such effects, and show that low-frequency weighting of loss functions avoids convergence to local minima when learning delay times. We show that when trained against analog effects units, sound output from the model is in some cases perceptually indistinguishable from the reference, but challenges still remain for effects with long delay times and feedback.
 
 [//]: # (<p style="font-size: 0.75em">)
 
