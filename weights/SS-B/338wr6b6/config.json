@@ -1,0 +1,92 @@
+{
+    "lr": 0.002,
+    "ckpt": "",
+    "seed": 8,
+    "stft": {
+        "n_fft": 2048,
+        "n_hop": 2048,
+        "n_win": 2048,
+        "window": null,
+        "synth_window": "hann"
+    },
+    "group": "251010_042227",
+    "model": {
+        "option": 2,
+        "use_filters": true
+    },
+    "pedal": {
+        "in_shape": "ap_chirp",
+        "in_sig_cfg": "train_input_250807_104006.wav",
+        "pulse_frac": 2,
+        "in_filename": "05-smallstone_bypass-250807_1107.wav",
+        "out_filename": "08-smallstone_0.5_0-250807_1135.wav"
+    },
+    "wandb": true,
+    "config": 101,
+    "option": 1,
+    "phaser": true,
+    "dropout": 0.01,
+    "project": "phaser_2025",
+    "trainer": {
+        "max_epochs": 15000,
+        "accelerator": "gpu",
+        "num_sanity_val_steps": 0,
+        "check_val_every_n_epoch": 1000
+    },
+    "use_osc": null,
+    "lfo_args": {
+        "f0": "2.362929222913238",
+        "bias": "13.0379181032088",
+        "skew": "0.2327283279772907",
+        "type": "rect_cos",
+        "phase": "6.0855204620424574",
+        "amplitude": "1.0415823422098143"
+    },
+    "val_data": [
+        {
+            "start": 1071,
+            "seq_length_samples": 262144
+        },
+        {
+            "start": 1462,
+            "seq_length_samples": 262144
+        }
+    ],
+    "train_data": {
+        "batch_size": 128,
+        "seq_length_samples": 262144
+    },
+    "dataset_path": "../../audio_datasets/modulation_fx_250807/",
+    "loss_weights": {
+        "lsd": 0,
+        "frame": 0,
+        "l_inf": 0,
+        "phase": 1,
+        "n_filt": 0,
+        "pre_emp": "",
+        "magnitude": 0,
+        "convergence": 0,
+        "ceps_magnitude": 0,
+        "log_difference": 0,
+        "ceps_convergence": 0
+    },
+    "init_osc_args": {
+        "n_channels": 1
+    },
+    "early_stopping": {
+        "monitor": "val_loss_0",
+        "patience": 100000,
+        "min_delta": 0,
+        "stopping_threshold": 0.0015
+    },
+    "log_audio_every_n_epoch": 7500,
+    "mlp": {
+        "in_dim": 1,
+        "out_dim": 1,
+        "activation": "Tanh()",
+        "hidden_dim": [
+            16
+        ]
+    },
+    "n_channels": 1
+}

@@ -1,0 +1,90 @@
+{
+    "lr": 0.005,
+    "ckpt": "",
+    "seed": 25,
+    "stft": {
+        "n_fft": 1024,
+        "n_hop": 1024,
+        "n_win": 1024,
+        "window": null,
+        "synth_window": "hann"
+    },
+    "group": "251030_210402",
+    "model": {
+        "use_filters": true
+    },
+    "pedal": {
+        "in_shape": "tri",
+        "in_sig_cfg": "train_input_250807_104006.wav",
+        "pulse_frac": 2,
+        "in_filename": "04-sv-1_bypass-250807_1107.wav",
+        "out_filename": "16-sv-1_0.5_0.5_1_1-250807_1335.wav"
+    },
+    "wandb": true,
+    "config": 32,
+    "phaser": false,
+    "dropout": 0.01,
+    "project": "sv-1_2025",
+    "trainer": {
+        "max_epochs": 15000,
+        "accelerator": "gpu",
+        "num_sanity_val_steps": 0,
+        "check_val_every_n_epoch": 750
+    },
+    "use_osc": null,
+    "lfo_args": {
+        "f0": "2.330670116794581",
+        "bias": "4.182584110516036",
+        "skew": "0.4111001279251132",
+        "type": "saw",
+        "phase": "3.6585538429450835",
+        "amplitude": "2.011079116045846"
+    },
+    "val_data": [
+        {
+            "start": 1071,
+            "seq_length_samples": 262144
+        },
+        {
+            "start": 1462,
+            "seq_length_samples": 262144
+        }
+    ],
+    "train_data": {
+        "batch_size": 256,
+        "seq_length_samples": 262144
+    },
+    "dataset_path": "../../audio_datasets/modulation_fx_250807/",
+    "loss_weights": {
+        "lsd": 0,
+        "frame": 0,
+        "l_inf": 0,
+        "phase": 1,
+        "n_filt": 0,
+        "pre_emp": "",
+        "magnitude": 0,
+        "convergence": 0,
+        "ceps_magnitude": 0,
+        "log_difference": 0,
+        "ceps_convergence": 0
+    },
+    "init_osc_args": {
+        "n_channels": 2
+    },
+    "early_stopping": {
+        "monitor": "val_loss_0",
+        "patience": 100000,
+        "min_delta": 0,
+        "stopping_threshold": 0.0015
+    },
+    "log_audio_every_n_epoch": 7500,
+    "mlp": {
+        "in_dim": 2,
+        "out_dim": 2,
+        "activation": "Tanh()",
+        "hidden_dim": [
+            16
+        ]
+    },
+    "n_channels": 2
+}
