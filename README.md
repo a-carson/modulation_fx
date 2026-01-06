@@ -5,8 +5,6 @@ Alistair Carson, Alec Wright and Stefan Bilbao
 <p style="font-size: 0.75em" align="center">
 <i><a href="https://www.acoustics.ed.ac.uk/" target="_blank" rel="noopener noreferrer">Acoustics and Audio Group</a><br>University of Edinburgh</i> <br>Edinburgh, UK
 </p>
-<p style="font-size: 1.0em; text-align: center">
-Accompanying code.</p>
 <div style="text-align: center">
     <a href="https://a-carson.github.io/modulation_fx/" 
         class="btn btn--primary btn--small"
@@ -18,3 +16,5 @@ Accompanying code.</p>
       🗞️ Paper
     </a>
 </div>
+
+More documentation coming soon...
