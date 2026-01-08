@@ -29,7 +29,7 @@ Train a model on a given configuration:
 ```angular2html
 python3 main.py --config 0
 ```
-where the config index is given by the table below.
+where the config index can be chosen from the table below (see `config.py`).
 
 ### Effect configurations
 The tables below show the parameter configurations for the 3 effects pedals considered.
