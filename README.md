@@ -10,7 +10,7 @@ Alistair Carson, Alec Wright and Stefan Bilbao
         class="btn btn--primary btn--small"
         target="_blank" rel="noopener noreferrer">
     🔊 Audio Examples
-    </a> &ensp; &ensp; &ensp; &ensp;  <a href="https://a-carson.github.io/modulation_fx/" 
+    </a> &ensp; &ensp; &ensp; &ensp;  <a href="https://arxiv.org/abs/2601.04867" 
         class="btn btn--primary btn--small"
         target="_blank" rel="noopener noreferrer">
       🗞️ Paper
