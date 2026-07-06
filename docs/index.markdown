@@ -52,7 +52,7 @@ Supplementary audio examples.</p>
         target="_blank" rel="noopener noreferrer">
     </> Code
     </a>
-    <a href="https://github.com/a-carson/modulation_fx" 
+    <a href="https://arxiv.org/abs/2601.04867" 
         class="btn btn--primary btn--small"
         target="_blank" rel="noopener noreferrer">
     🗞️ Paper
@@ -86,49 +86,188 @@ Modulation effects such as phasers, flangers and chorus effects are heavily used
 [//]: # (</div>)
 
 
-## Audio Examples
-#### BF-2 Flanger
+# Audio Examples
+Listen below to outputs from the target analog modulation pedals and our models' emulations.
+## Dry audio samples
 <table>
 <thead>
-<tr><th colspan="2"></th><th colspan="2">BF-2-A (no feedback)</th><th colspan="2">BF-2-B (feedback)</th></tr>
-<tr><th>Clip</th><th>Input</th><th>Target</th><th>Model</th><th>Target</th><th>Model</th></tr>
+<tr><th>Clip</th><th>Input</th></tr>
 </thead>
 <tbody>
-<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/input_clip0_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip0_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip0_model_0.wav" type="audio/wav"></audio></td></tr>
-<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/input_clip1_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip1_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip1_model_0.wav" type="audio/wav"></audio></td></tr>
-<tr><td>Guitar 3</td><td><audio controls style="width: 9em"><source src="audio/input_clip2_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip2_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip2_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip2_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip2_model_0.wav" type="audio/wav"></audio></td></tr>
-<tr><td>Guitar 4</td><td><audio controls style="width: 9em"><source src="audio/input_clip3_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip3_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip3_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip3_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip3_model_0.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/input_clip0_input.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/input_clip1_input.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/input_clip4_input.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/input_clip5_input.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+## BF-2 Flanger
+### Resonance = 0% (no feedback)
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>FC-I</th><th>FC-II</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip0_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip0_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip1_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip1_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip4_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip4_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip5_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-A_clip5_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
 </tbody>
 </table>
 
-
-#### Smallstone Phaser
+### Resonance = 50% (medium feedback)
 <table>
 <thead>
-<tr><th colspan="2"></th><th colspan="2">SS-A (no feedback)</th><th colspan="2">SS-B (feedback)</th></tr>
-</thead>
-<thead>
-<tr><th>Clip</th><th>Input</th><th>Target</th><th>Model</th><th>Target</th><th>Model</th></tr>
+<tr><th>Clip</th><th>Target</th><th>FC-I</th><th>FC-II</th></tr>
 </thead>
 <tbody>
-<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/input_clip0_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip0_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip0_model_0.wav" type="audio/wav"></audio></td></tr>
-<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/input_clip1_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip1_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip1_model_0.wav" type="audio/wav"></audio></td></tr>
-<tr><td>Guitar 3</td><td><audio controls style="width: 9em"><source src="audio/input_clip2_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip2_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip2_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip2_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip2_model_0.wav" type="audio/wav"></audio></td></tr>
-<tr><td>Guitar 4</td><td><audio controls style="width: 9em"><source src="audio/input_clip3_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip3_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip3_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip3_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip3_model_0.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip0_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip0_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip1_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip1_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip4_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip4_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip5_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-B_clip5_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
 </tbody>
 </table>
 
-
-#### SV-1 Chorus
+### Resonance = 100% (max feedback)
 <table>
 <thead>
-<tr><th colspan="2"></th><th colspan="2">SV-1-A (Wave=0, Depth=0.5)</th><th colspan="2">SV-1-A (Wave=1, Depth=0.5)</th><th colspan="2">SV-1-A (Wave=1, Depth=1)</th></tr>
-<tr><th>Clip</th><th>Input</th><th>Target</th><th>Model</th><th>Target</th><th>Model</th><th>Target</th><th>Model</th></tr>
+<tr><th>Clip</th><th>Target</th><th>FC-I</th><th>FC-II</th></tr>
 </thead>
 <tbody>
-<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/input_clip0_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip0_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip0_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip0_model_0.wav" type="audio/wav"></audio></td></tr>
-<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/input_clip1_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip1_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip1_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip1_model_0.wav" type="audio/wav"></audio></td></tr>
-<tr><td>Guitar 3</td><td><audio controls style="width: 9em"><source src="audio/input_clip2_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip2_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip2_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip2_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip2_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip2_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip2_model_0.wav" type="audio/wav"></audio></td></tr>
-<tr><td>Guitar 4</td><td><audio controls style="width: 9em"><source src="audio/input_clip3_input.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip3_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip3_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip3_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip3_model_0.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip3_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip3_model_0.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip0_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip0_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip1_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip1_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip4_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip4_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip5_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/BF-2-C_clip5_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+## Small Stone Phaser
+### Color OFF , Rate = 75%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>P-I</th><th>P-II</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip0_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip0_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip1_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip1_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip4_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip4_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip5_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-A_clip5_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+### Color OFF, Rate = 50%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>P-I</th><th>P-II</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip0_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip0_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip1_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip1_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip4_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip4_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip5_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-B_clip5_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+### Color OFF, Rate = 25%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>P-I</th><th>P-II</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip0_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip0_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip1_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip1_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip4_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip4_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip5_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-C_clip5_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+### Color ON, Rate = 75%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>P-I</th><th>P-II</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip0_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip0_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip1_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip1_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip4_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip4_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip5_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-D_clip5_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+### Color ON , Rate = 50%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>P-I</th><th>P-II</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip0_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip0_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip1_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip1_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip4_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip4_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip5_model_feedback_option=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SS-E_clip5_model_feedback_option=2.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+## SV-1 Supervibe Chorus
+### Depth = 50%, Wave = 0%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>FC-I, C=1</th><th>FC-I, C=2</th><th>FC-I, C=3</th><th>FC-I, C=4</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip0_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip0_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip0_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip0_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip1_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip1_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip1_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip1_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip4_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip4_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip4_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip4_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip5_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip5_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip5_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-A_clip5_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+### Depth = 50%, Wave = 50%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>FC-I, C=1</th><th>FC-I, C=2</th><th>FC-I, C=3</th><th>FC-I, C=4</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip0_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip0_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip0_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip0_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip1_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip1_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip1_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip1_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip4_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip4_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip4_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip4_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip5_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip5_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip5_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-B_clip5_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+### Depth = 50%, Wave = 100%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>FC-I, C=1</th><th>FC-I, C=2</th><th>FC-I, C=3</th><th>FC-I, C=4</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip0_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip0_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip0_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip0_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip1_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip1_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip1_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip1_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip4_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip4_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip4_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip4_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip5_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip5_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip5_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-C_clip5_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+### Depth = 100%, Wave = 50%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>FC-I, C=1</th><th>FC-I, C=2</th><th>FC-I, C=3</th><th>FC-I, C=4</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip0_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip0_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip0_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip0_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip1_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip1_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip1_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip1_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip4_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip4_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip4_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip4_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip5_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip5_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip5_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-D_clip5_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+</tbody>
+</table>
+
+### Depth = 100%, Wave = 100%
+<table>
+<thead>
+<tr><th>Clip</th><th>Target</th><th>FC-I, C=1</th><th>FC-I, C=2</th><th>FC-I, C=3</th><th>FC-I, C=4</th></tr>
+</thead>
+<tbody>
+<tr><td>Guitar 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip0_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip0_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip0_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip0_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip0_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Guitar 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip1_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip1_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip1_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip1_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip1_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 1</td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip4_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip4_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip4_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip4_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip4_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
+<tr><td>Bass 2</td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip5_target.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip5_model_n_models=1.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip5_model_n_models=2.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip5_model_n_models=3.wav" type="audio/wav"></audio></td><td><audio controls style="width: 9em"><source src="audio/SV-1-E_clip5_model_n_models=4.wav" type="audio/wav"></audio></td></tr>
 </tbody>
 </table>
